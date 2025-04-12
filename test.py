@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import HashingVectorizer
 model = load_model("sentiment.h5")
 
 # Initialize the HashingVectorizer with the same number of features as used during training
-vectorizer = HashingVectorizer(n_features=2**20)  # Same number of features used in training
+vectorizer = HashingVectorizer(n_features=2**14)  # Same number of features used in training
 
 # Function to predict sentiment
 def predict_sentiment():
