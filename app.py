@@ -7,7 +7,7 @@ import numpy as np
 model = load_model("sentiment.h5")
 
 # Initialize the HashingVectorizer with the same parameters used during training
-vectorizer = HashingVectorizer(n_features=2**20)  # Use the same n_features as in training
+vectorizer = HashingVectorizer(n_features=2**14)  # Use the same n_features as in training
 
 # Prediction function
 def predict_sentiment(text):
